@@ -89,18 +89,38 @@ As a user who may not always have internet access, I should be able to get event
    - **When** the user tries to fetch new event data (e.g., changing the city).
    - **Then** the app displays an error message.
 
+### Feature 5: Add an App Shortcut to the Home Screen
+**User Story**: 
+As a frequent app user, I should be able to add the Meet app as a shortcut on my device's home screen, so that I can access the app quickly and conveniently.
+
+#### Scenarios:
+1. **Install Shortcut on Home Screen**:
+   - **Given** the user is using the Meet app.
+   - **When** the user chooses to add the app as a shortcut.
+   - **Then** the app creates a shortcut icon on the user's device home screen for easy access.
+
+### Feature 6: Display Charts Visualizing Event Details
+**User Story**: 
+As an analytical user, I should be able to view charts visualizing event details, so that I can get a clear and quick overview of event distributions, like the number of upcoming events in each city.
+
+#### Scenarios:
+1. **View Event Distribution Chart**:
+   - **Given** the user is looking at event details in the app.
+   - **When** the user accesses the section displaying event statistics.
+   - **Then** the app displays a chart showing the number of upcoming events in each city, providing a visual representation of event distribution.
+
 ## Technical Stack
-- **Frontend**: React, PWA technologies
-- **Backend**: Serverless functions (AWS Lambda preferred)
-- **API**: Google Calendar API with OAuth2 authentication
-- **Testing**: Test-Driven Development approach with >= 90% test coverage
-- **Deployment**: Hosted on GitHub Pages, compatible with major browsers and responsive across devices
+- **Frontend**: Developed using React, incorporating Progressive Web App (PWA) technologies for a responsive and offline-capable user experience.
+- **Backend**: Serverless architecture leveraging AWS Lambda for scalable, maintenance-free backend solutions.
+- **API Integration**: Utilizing the Google Calendar API with OAuth2 authentication for secure and reliable data fetching.
+- **Testing**: Adhering to Test-Driven Development (TDD) principles with a target of at least 90% test coverage to ensure code reliability and quality.
+- **Deployment**: The app is hosted on GitHub Pages and is designed to be compatible across major browsers, ensuring a seamless user experience on various devices.
 
 ## Project Requirements
-- React application using TDD
-- Serverless functions for authorization
-- App deployment on GitHub Pages
-- Compliance with Lighthouse’s PWA checklist
-- Offline functionality with service workers
-- Data visualization implementation
-- Comprehensive test coverage and performance monitoring
+- **React Application**: The app is built using React, following best practices and modern development standards.
+- **Serverless Functions**: Implementation of serverless functions, preferably AWS Lambda, for handling backend processes, including authorization.
+- **Deployment Strategy**: Deployment on GitHub Pages, emphasizing accessibility and performance across different browsers and devices.
+- **PWA Compliance**: Adhering to Lighthouse's PWA checklist to guarantee a high-quality Progressive Web App experience.
+- **Offline Functionality**: Ensuring robust offline functionality using service workers for a seamless user experience even without internet connectivity.
+- **Data Visualization**: Integration of data visualization tools for effective representation of event data.
+- **Testing and Performance**: Comprehensive test coverage and regular performance monitoring to maintain and improve app quality.
