@@ -111,7 +111,7 @@ As an analytical user, I should be able to view charts visualizing event details
 
 ## Technical Stack
 - **Frontend**: Developed using React, incorporating Progressive Web App (PWA) technologies for a responsive and offline-capable user experience.
-- **Backend**: Serverless architecture leveraging AWS Lambda for scalable, maintenance-free backend solutions.
+- **Backend**: Serverless architecture leveraging AWS Lambda for scalable, maintenance-free backend solutions. Serverless functions are utilized to handle dynamic backend processes such as authentication, data processing, and integration with the Google Calendar API. This approach allows for efficient scaling, cost-effective operations (as costs are based on actual usage), and eliminates the need for dedicated server management, making the app more reliable and easier to maintain.
 - **API Integration**: Utilizing the Google Calendar API with OAuth2 authentication for secure and reliable data fetching.
 - **Testing**: Adhering to Test-Driven Development (TDD) principles with a target of at least 90% test coverage to ensure code reliability and quality.
 - **Deployment**: The app is hosted on GitHub Pages and is designed to be compatible across major browsers, ensuring a seamless user experience on various devices.
