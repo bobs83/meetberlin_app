@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bobs83/meetberlin_app/issues"
   },
-  "homepage": "https://github.com/bobs83/meetberlin_app#readme"
+  "homepage": "https://github.com/bobs83/meetberlin_app#readme",
+  "dependencies": {
+    "googleapis": "^129.0.0"
+  }
 }

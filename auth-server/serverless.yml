@@ -23,6 +23,12 @@ frameworkVersion: "3"
 provider:
   name: aws
   runtime: nodejs18.x
+  region: eu-central-1
+  timeout: 30
+  environment:
+    CLIENT_ID: ${file(config.json):CLIENT_ID}
+    CLIENT_SECRET: ${file(config.json):CLIENT_SECRET}
+    CALENDAR_ID: ${file(config.json):CALENDAR_ID}
 
 # you can overwrite defaults here
 #  stage: dev
@@ -59,8 +65,12 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+  getAuthURL:
+    handler: handler.getAuthURL
+    events:
+      - http:
+          path: api/get-auth-url
+          method: get
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
