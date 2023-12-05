@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/bobs83/meetberlin_app#readme",
   "dependencies": {
-    "googleapis": "^129.0.0"
+    "googleapis": "^110.0.0"
   }
 }
