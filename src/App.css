@@ -1,38 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+/* General styles */
 .App {
+  text-align: left;
+  padding: 3% 6%;
+}
+
+.App * {
+  box-sizing: border-box;
+}
+
+h1 {
   text-align: center;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span {
+  color: #074745;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul,
+#event-list {
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  max-width: 800px;
+}
+
+/* Event box styles */
+.event-box {
+  position: relative;
+  min-height: 150px;
+  border: #bcdcdb 1px solid;
+  border-radius: 4px;
+  margin-bottom: 35px;
+  padding: 35px;
+  background-color: #fff;
+  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+}
+
+.event-box h3 {
+  margin-top: 0;
+}
+
+.event-box p,
+.event-box button {
+  margin: 8px 0;
+}
+
+.event-box button {
+  line-height: 1.6;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    #065a60,
+    #08878d
+  ); /* Gradient background */
+  color: white;
+  cursor: pointer;
+  border: 1px solid #074745; /* Subtle border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /* Bold text */
+  letter-spacing: 0.5px; /* Spaced letters */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.event-box button:hover {
+  background: linear-gradient(
+    to right,
+    #048383,
+    #06a1a4
+  ); /* Darker gradient on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"] {
+  padding: 8px 6px 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
+  margin-bottom: 20px;
+}
+
+.city {
+  width: 250px;
+}
+
+#city-search,
+#number-of-events {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+/* Suggestions styles */
+.suggestions {
+  width: 250px;
+  position: absolute;
+  top: 45px;
+  z-index: 2;
+  align-self: center;
+  margin: 0;
+  font-size: 14px;
+  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.suggestions > li {
+  text-align: left;
+  padding: 8px 6px 8px 10px;
+  background-color: #eee;
+  cursor: default;
+}
+
+.suggestions > li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.suggestions > li:hover {
+  background-color: #bcdcdb;
+}
+
+/* Event styles */
+.event {
+  padding: 10px 10px 35px;
+  margin-bottom: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.details-btn {
+  font-weight: 500;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+#details {
+  padding: 6px;
+  border: 10px;
+  border-radius: 3px;
+  position: relative;
+  text-align: justify;
 }

@@ -3,26 +3,30 @@ import { useState } from "react";
 const Event = ({ event }) => {
   const [showDetails, setshowDetails] = useState(false);
 
-  return (
-    <li>
-      <h3>{event.summary}</h3>
-      <p>{event.created}</p>
-      <p>{event.location}</p>
+  // Function to format the date and time
+  const formatDate = (dateTime) => {
+    const date = new Date(dateTime);
+    const options = {
+      hour: "2-digit",
+      minute: "2-digit",
+    };
+    return `${date.toLocaleDateString()} at ${date.toLocaleTimeString(
+      [],
+      options
+    )}`;
+  };
 
-      <button
-        onClick={() => {
-          setshowDetails(!showDetails);
-        }}
-      >
+  return (
+    <li className="event-box">
+      <h2>{event.summary}</h2>
+      <p>{event.location}</p>
+      <p>When: {formatDate(event.start.dateTime)}</p>
+      <span>Timezone: ({event.start.timeZone})</span>
+      <button onClick={() => setshowDetails(!showDetails)}>
         {showDetails ? "Hide Details" : "Show Details"}
       </button>
-
       {showDetails ? (
         <div id="details">
-          <p>
-            When: {event.start.dateTime}
-            <span>({event.start.timeZone})</span>
-          </p>
           <p>{event.description}</p>
         </div>
       ) : null}

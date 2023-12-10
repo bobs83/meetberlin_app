@@ -3,7 +3,6 @@ import EventList from "./components/EventList";
 import NumberOfEvents from "./components/NumberOfEvents";
 import { useEffect, useState } from "react";
 import { extractLocations, getEvents } from "./api";
-
 import "./App.css";
 
 const App = () => {
@@ -28,6 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <h1>The Berlin Meet App</h1>
       <CitySearch allLocations={allLocations} setCurrentCity={setCurrentCity} />
       <NumberOfEvents setCurrentNOE={setCurrentNOE} />
       <EventList events={events} />
