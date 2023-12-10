@@ -8,7 +8,9 @@ describe("<NumberOfEvents/> component", () => {
 
   // Before each test, render the NumberOfEvents component with a mock setNumber function
   beforeEach(() => {
-    NumberOfEventsComponent = render(<NumberOfEvents setNumber={() => {}} />);
+    NumberOfEventsComponent = render(
+      <NumberOfEvents setCurrentNOE={() => {}} />
+    );
   });
 
   // Test to check if the input field is present in the rendered component
