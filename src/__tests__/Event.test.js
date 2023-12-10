@@ -44,6 +44,8 @@ describe("<Event /> Component", () => {
   });
 
   // Test to check if details are displayed when the "Show Details" button is clicked
+  // Solved with help from chat GPT
+
   test('show details after user clicks button "Show Details"', async () => {
     // Setup userEvent, find the "Show Details" button, and simulate a click
     const user = userEvent.setup();
@@ -56,6 +58,8 @@ describe("<Event /> Component", () => {
   });
 
   // Test to check if details are hidden when the "Show Details" button is clicked again
+  // Solved with help from chat GPT
+
   test("hides details when button is clicked again", async () => {
     // Setup userEvent, find the "Show Details" button, and simulate clicks to show and then hide details
     const user = userEvent.setup();
@@ -69,6 +73,7 @@ describe("<Event /> Component", () => {
 
     // Second click to hide details
     await user.click(button);
+
     details = EventComponent.container.querySelector("#details");
     expect(details).toBeNull();
     expect(button.textContent).toBe("Show Details");
