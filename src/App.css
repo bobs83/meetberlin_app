@@ -60,7 +60,7 @@ ul,
   margin: 8px 0;
 }
 
-.event-box button {
+.details-btn {
   line-height: 1.6;
   position: absolute;
   top: 13px;
@@ -82,7 +82,7 @@ ul,
   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
 }
 
-.event-box button:hover {
+.details-btn button:hover {
   background: linear-gradient(
     to right,
     #048383,
@@ -155,7 +155,7 @@ input[type="number"] {
   position: relative;
 }
 
-.details-btn {
+/* .details-btn {
   font-weight: 500;
   position: absolute;
   right: 5px;
@@ -164,7 +164,7 @@ input[type="number"] {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-}
+} */
 
 #details {
   padding: 6px;

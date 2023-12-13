@@ -149,3 +149,6 @@ As an analytical user, I should be able to view charts visualizing event details
 - **Offline Functionality**: Ensuring robust offline functionality using service workers for a seamless user experience even without internet connectivity.
 - **Data Visualization**: Integration of data visualization tools for effective representation of event data.
 - **Testing and Performance**: Comprehensive test coverage and regular performance monitoring to maintain and improve app quality.
+
+See my work at:
+https://bobs83.github.io/meetberlin_app/

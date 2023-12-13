@@ -20,9 +20,13 @@ const Event = ({ event }) => {
     <li className="event-box">
       <h2>{event.summary}</h2>
       <p>{event.location}</p>
+      <p>{event.created}</p>
       <p>When: {formatDate(event.start.dateTime)}</p>
       <span>Timezone: ({event.start.timeZone})</span>
-      <button onClick={() => setshowDetails(!showDetails)}>
+      <button
+        className="details-btn"
+        onClick={() => setshowDetails(!showDetails)}
+      >
         {showDetails ? "Hide Details" : "Show Details"}
       </button>
       {showDetails ? (
