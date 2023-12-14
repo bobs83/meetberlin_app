@@ -89,21 +89,35 @@ describe("<CitySearch /> component", () => {
   });
 });
 
+// Integration test suite for the CitySearch component within the App context
 describe("<CitySearch /> integration", () => {
+  // Test to ensure that the CitySearch suggestions list renders within the App
   test("renders suggestions list when the app is rendered.", async () => {
+    // Initialize user event library for simulating user interactions
     const user = userEvent.setup();
+
+    // Render the main App component, which includes the CitySearch component
     const AppComponent = render(<App />);
+
+    // Retrieve the DOM element of the App component for further querying
     const AppDOM = AppComponent.container.firstChild;
 
+    // Locate the CitySearch component inside the App's DOM using a specific ID
     const CitySearchDOM = AppDOM.querySelector("#city-search");
+
+    // Find the city input textbox within the CitySearch component and simulate a user click to focus on it
     const cityTextBox = within(CitySearchDOM).queryByRole("textbox");
     await user.click(cityTextBox);
 
+    // Fetch events and extract location data for testing the functionality
     const allEvents = await getEvents();
     const allLocations = extractLocations(allEvents);
 
+    // Query for all list items (suggestions) within the CitySearch component and evaluate if they're rendered correctly
     const suggestionListItems =
       within(CitySearchDOM).queryAllByRole("listitem");
+
+    // Assert that the number of suggestions rendered matches the number of locations extracted, plus one (typically for an 'All Cities' option)
     expect(suggestionListItems.length).toBe(allLocations.length + 1);
   });
 });
