@@ -15,6 +15,19 @@ describe("<Event /> Component", () => {
     EventComponent = render(<Event event={mockEvent} />);
   });
 
+  // Function to format the date and time
+  const formatDate = (dateTime) => {
+    const date = new Date(dateTime);
+    const options = {
+      hour: "2-digit",
+      minute: "2-digit",
+    };
+    return `${date.toLocaleDateString()} at ${date.toLocaleTimeString(
+      [],
+      options
+    )}`;
+  };
+
   // Test to check if the event's title is present in the rendered component
   test("has the event's title", () => {
     // Query for the event's title text and assert its presence in the document
@@ -26,6 +39,7 @@ describe("<Event /> Component", () => {
   test("has the event's time", () => {
     // Query for the event's time text and assert its presence in the document
     const time = EventComponent.queryByText(mockEvent.created);
+    // const time = EventComponent.queryByText(formatDate(mockEvent.created));
     expect(time).toBeInTheDocument();
   });
 
