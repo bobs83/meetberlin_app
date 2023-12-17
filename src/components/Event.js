@@ -26,6 +26,7 @@ const Event = ({ event }) => {
       <button
         className="details-btn"
         onClick={() => setshowDetails(!showDetails)}
+        aria-expanded={showDetails}
       >
         {showDetails ? "Hide Details" : "Show Details"}
       </button>

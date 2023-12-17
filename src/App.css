@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
 
 /* General styles */
 .App {
@@ -42,8 +42,8 @@ ul,
 /* Event box styles */
 .event-box {
   position: relative;
-  min-height: 150px;
-  border: #bcdcdb 1px solid;
+  min-height: 150px; /* Reserve space for dynamic content */
+  border: #bcdcdb 2px solid;
   border-radius: 4px;
   margin-bottom: 35px;
   padding: 35px;
@@ -61,34 +61,25 @@ ul,
 }
 
 .details-btn {
-  line-height: 1.6;
   position: absolute;
-  top: 13px;
+  top: 5px;
   right: 13px;
   padding: 10px 16px;
   border-radius: 4px;
-  background: linear-gradient(
-    to right,
-    #065a60,
-    #08878d
-  ); /* Gradient background */
+  background: linear-gradient(to right, #065a60, #08878d);
   color: white;
   cursor: pointer;
-  border: 1px solid #074745; /* Subtle border */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border: 1px solid #074745;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-family: "Roboto", sans-serif;
-  font-weight: 400; /* Bold text */
-  letter-spacing: 0.5px; /* Spaced letters */
-  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 .details-btn button:hover {
-  background: linear-gradient(
-    to right,
-    #048383,
-    #06a1a4
-  ); /* Darker gradient on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+  background: linear-gradient(to right, #048383, #06a1a4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Input styles */
@@ -127,6 +118,8 @@ input[type="number"] {
   margin: 0;
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  min-height: 100px; /* Reserve space for dynamic content */
+  overflow: hidden;
 }
 
 .suggestions > li {
@@ -155,20 +148,9 @@ input[type="number"] {
   position: relative;
 }
 
-/* .details-btn {
-  font-weight: 500;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  padding: 5px 8px;
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
-} */
-
 #details {
   padding: 6px;
-  border: 10px;
+  border: 1px solid #eae6e6;
   border-radius: 3px;
   position: relative;
   text-align: justify;
