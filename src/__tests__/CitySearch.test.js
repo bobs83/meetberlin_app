@@ -10,7 +10,13 @@ describe("<CitySearch /> component", () => {
 
   // Before each test, render the CitySearch component and assign it to CitySearchComponent
   beforeEach(() => {
-    CitySearchComponent = render(<CitySearch allLocations={[]} />);
+    CitySearchComponent = render(
+      <CitySearch
+        allLocations={[]}
+        setCurrentCity={() => {}}
+        setInfoAlert={() => {}}
+      />
+    );
   });
 
   // Test to ensure the city text input box is rendered
@@ -47,7 +53,9 @@ describe("<CitySearch /> component", () => {
     const user = userEvent.setup();
     const allEvents = await getEvents();
     const allLocations = extractLocations(allEvents);
-    CitySearchComponent.rerender(<CitySearch allLocations={allLocations} />);
+    CitySearchComponent.rerender(
+      <CitySearch allLocations={allLocations} setInfoAlert={() => {}} />
+    );
 
     // Simulate typing "Berlin" in the city textbox
     const cityTextBox = CitySearchComponent.queryByRole("textbox");
@@ -74,7 +82,11 @@ describe("<CitySearch /> component", () => {
     const allEvents = await getEvents();
     const allLocations = extractLocations(allEvents);
     CitySearchComponent.rerender(
-      <CitySearch allLocations={allLocations} setCurrentCity={() => {}} />
+      <CitySearch
+        allLocations={allLocations}
+        setCurrentCity={() => {}}
+        setInfoAlert={() => {}}
+      />
     );
 
     // Simulate typing "Berlin" and clicking the first suggestion

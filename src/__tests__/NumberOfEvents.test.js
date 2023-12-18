@@ -9,7 +9,7 @@ describe("<NumberOfEvents/> component", () => {
   // Before each test, render the NumberOfEvents component with a mock setNumber function
   beforeEach(() => {
     NumberOfEventsComponent = render(
-      <NumberOfEvents setCurrentNOE={() => {}} />
+      <NumberOfEvents setCurrentNOE={() => {}} setErrorAlert={() => {}} />
     );
   });
 
