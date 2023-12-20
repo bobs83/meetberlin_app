@@ -1,4 +1,5 @@
 import mockData from "./mock-data";
+import NProgress from "nprogress";
 /**
  *
  * @param {*} events:
@@ -14,7 +15,6 @@ export const extractLocations = (events) => {
 };
 
 /**
-/**
  * Fetches a list of events from an API or returns mock data in a development environment.
  * It checks the environment, obtains an access token for authentication, and then fetches the events.
  */
@@ -27,7 +27,7 @@ export const getEvents = async () => {
   if (!navigator.onLine) {
     const events = localStorage.getItem("lastEvents");
     NProgress.done();
-    return events?JSON.parse(events):[];
+    return events ? JSON.parse(events) : [];
   }
   // Obtain an access token for authentication
   // This token is necessary to authenticate the request to the events API
@@ -48,12 +48,13 @@ export const getEvents = async () => {
     const result = await response.json(); // Parse the JSON response
 
     // Check if the result contains event data
-		if (result) {
+    if (result) {
       NProgress.done();
       localStorage.setItem("lastEvents", JSON.stringify(result.events));
       return result.events;
     } else return null;
-  // If no token was obtained, no action is performed (events are not fetched)
+    // If no token was obtained, no action is performed (events are not fetched)
+  }
 };
 
 /**
