@@ -24,7 +24,11 @@ export const getEvents = async () => {
   if (window.location.href.startsWith("http://localhost")) {
     return mockData; // Return mock data for local development/testing
   }
-
+  if (!navigator.onLine) {
+    const events = localStorage.getItem("lastEvents");
+    NProgress.done();
+    return events?JSON.parse(events):[];
+  }
   // Obtain an access token for authentication
   // This token is necessary to authenticate the request to the events API
   const token = await getAccessToken();
@@ -44,10 +48,11 @@ export const getEvents = async () => {
     const result = await response.json(); // Parse the JSON response
 
     // Check if the result contains event data
-    if (result) {
-      return result.events; // Return the events data
-    } else return null; // If no data is received, return null
-  }
+		if (result) {
+      NProgress.done();
+      localStorage.setItem("lastEvents", JSON.stringify(result.events));
+      return result.events;
+    } else return null;
   // If no token was obtained, no action is performed (events are not fetched)
 };
 
