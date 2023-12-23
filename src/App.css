@@ -163,3 +163,29 @@ input[type="number"] {
   width: 250px;
   z-index: 1000;
 }
+
+.charts-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #event-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  #event-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
