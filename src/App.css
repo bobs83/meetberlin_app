@@ -183,7 +183,7 @@ input[type="number"] {
 
 #details {
   padding: 6px;
-  border: 1px solid #eae6e6;
+  /* border: 1px solid #eae6e6; */
   border-radius: 3px;
   position: relative;
   text-align: justify;
@@ -203,6 +203,12 @@ input[type="number"] {
   margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.myClass {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
