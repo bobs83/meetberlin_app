@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/meetberlin_app/static/css/main.f6be6e4e.css",
-    "main.js": "/meetberlin_app/static/js/main.b5089c8f.js",
+    "main.css": "/meetberlin_app/static/css/main.aa1b310c.css",
+    "main.js": "/meetberlin_app/static/js/main.1226f0de.js",
     "static/js/787.0f140951.chunk.js": "/meetberlin_app/static/js/787.0f140951.chunk.js",
     "service-worker.js": "/meetberlin_app/service-worker.js",
     "index.html": "/meetberlin_app/index.html",
-    "main.f6be6e4e.css.map": "/meetberlin_app/static/css/main.f6be6e4e.css.map",
-    "main.b5089c8f.js.map": "/meetberlin_app/static/js/main.b5089c8f.js.map",
+    "main.aa1b310c.css.map": "/meetberlin_app/static/css/main.aa1b310c.css.map",
+    "main.1226f0de.js.map": "/meetberlin_app/static/js/main.1226f0de.js.map",
     "787.0f140951.chunk.js.map": "/meetberlin_app/static/js/787.0f140951.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6be6e4e.css",
-    "static/js/main.b5089c8f.js"
+    "static/css/main.aa1b310c.css",
+    "static/js/main.1226f0de.js"
   ]
 }
