@@ -6,6 +6,7 @@ import { extractLocations, getEvents } from "./api";
 import { InfoAlert, ErrorAlert, WarningAlert } from "./components/Alert";
 import CityEventsChart from "./components/CityEventsChart";
 import EventGenresChart from "./components/EventGenresChart";
+import logo from "./img/logo2.png";
 import "./App.css";
 
 const App = () => {
@@ -40,21 +41,30 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>The Berlin Meet App</h1>
+      <div className="logo-container">
+        <img src={logo} alt="Logo" />
+      </div>
+      <div className="header">
+        <h1>MeetNCode</h1>
+        <h3>Find a coding event near you!</h3>
+      </div>
+
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
         {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
         {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
       </div>
-      <CitySearch
-        allLocations={allLocations}
-        setCurrentCity={setCurrentCity}
-        setInfoAlert={setInfoAlert}
-      />
-      <NumberOfEvents
-        setCurrentNOE={setCurrentNOE}
-        setErrorAlert={setErrorAlert}
-      />
+      <div className="search-container">
+        <CitySearch
+          allLocations={allLocations}
+          setCurrentCity={setCurrentCity}
+          setInfoAlert={setInfoAlert}
+        />
+        <NumberOfEvents
+          setCurrentNOE={setCurrentNOE}
+          setErrorAlert={setErrorAlert}
+        />
+      </div>
       <div className="charts-container">
         <CityEventsChart allLocations={allLocations} events={events} />
         <EventGenresChart events={events} />

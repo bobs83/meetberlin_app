@@ -12,11 +12,18 @@
 
 h1 {
   text-align: center;
-  padding: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 2.8rem;
-  margin-bottom: 20px;
+  font-size: 3.8rem;
+  line-height: 0.2;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -25,10 +32,34 @@ p {
   line-height: 1.6;
 }
 
+label {
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
 span {
   color: #074745;
   font-size: 14px;
   font-weight: 500;
+}
+
+.sub-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.logo-container {
+  float: left;
+  margin: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
 }
 
 ul,
@@ -94,6 +125,8 @@ input[type="number"] {
   align-self: center;
   height: 38px;
   margin-bottom: 20px;
+  width: 200px;
+  margin-left: 10px;
 }
 
 .city {
@@ -158,14 +191,16 @@ input[type="number"] {
 
 .alerts-container {
   position: fixed;
-  /* top: 0px; */
-  left: 200px;
-  width: 250px;
+  opacity: 0.9;
+  bottom: 2%;
+  right: 2%;
+  width: 80%;
+  max-width: 250px;
   z-index: 1000;
 }
 
 .charts-container {
-  margin-top: 2rem;
+  margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -176,16 +211,14 @@ input[type="number"] {
     grid-template-columns: 1fr;
   }
   #event-list {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 460px) {
   #event-list {
     margin-top: 2rem;
-    display: grid;
     grid-template-columns: 1fr;
   }
 }
