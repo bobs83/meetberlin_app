@@ -32,13 +32,14 @@ describe("show/hide an event details", () => {
 
   // Test to check if a user can expand an event to see its details
   test("User can expand an event to see its details", async () => {
-    await page.click(".event-box .details-btn"); // Simulate a click on the details button
-    const eventDetails = await page.$(".event-box .details-btn"); // Query for event details again
+    await page.waitForSelector(".event-box .details-btn"); // Simulate a click on the details button
+    const eventDetails = await page.$(".event-box #details"); // Query for event details again
     expect(eventDetails).toBeDefined(); // Expect the details to be present after expanding
   });
 
   // Test to verify that a user can collapse an event to hide its details
   test("User can collapse an event to hide details", async () => {
+    await page.waitForSelector(".event-box .details-btn"); // Wait for the button to appear
     await page.click(".event-box .details-btn"); // First, expand the details
     await page.click(".event-box .details-btn"); // Then, collapse them
     const eventDetails = await page.$(".event-box #details"); // Check if details are hidden

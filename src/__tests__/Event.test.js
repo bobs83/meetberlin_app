@@ -39,7 +39,8 @@ describe("<Event /> Component", () => {
   test("has the event's time", () => {
     // Query for the event's time text and assert its presence in the document
     const time = EventComponent.queryByText(mockEvent.created);
-    // const time = EventComponent.queryByText(formatDate(mockEvent.created));
+    // const time = EventComponent.queryByText(formatDate(event.start.dateTime));
+    //did get this to work with the formatDate function
     expect(time).toBeInTheDocument();
   });
 
