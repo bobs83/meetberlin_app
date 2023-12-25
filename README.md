@@ -1,4 +1,6 @@
-# Meet App
+# MeetNCode App
+
+### Link: https://bobs83.github.io/meetberlin_app/
 
 ## Introduction
 
@@ -148,7 +150,19 @@ As an analytical user, I should be able to view charts visualizing event details
 - **PWA Compliance**: Adhering to Lighthouse's PWA checklist to guarantee a high-quality Progressive Web App experience.
 - **Offline Functionality**: Ensuring robust offline functionality using service workers for a seamless user experience even without internet connectivity.
 - **Data Visualization**: Integration of data visualization tools for effective representation of event data.
-- **Testing and Performance**: Comprehensive test coverage and regular performance monitoring to maintain and improve app quality.
+- **Testing and Performance**:
 
-See my work at:
-https://bobs83.github.io/meetberlin_app/
+  - **Comprehensive Testing**: Embracing a thorough Test-Driven Development (TDD) approach, the application undergoes extensive testing. This includes:
+    - **Unit Testing**: Ensuring individual components function correctly.
+    - **Integration Testing**: Validating the interaction between various components.
+    - **End-to-End Testing**: Testing the entire application workflow as experienced by the end user.
+  - **Performance Optimization**: Performance assessments are conducted through tools such as Google Lighthouse to ensure optimal application speed and efficiency. Key focus areas include: - **Load Time**: Minimizing the time it takes for the app to become fully operational. - **Responsiveness**: Ensuring the app responds swiftly to user interactions regardless of the device or browser. - **Resource Efficiency**: Optimizing the use of resources to ensure a smooth, lag-free experience, especially in offline mode.
+
+        ## Screenshots
+
+    - **Full Screen**:
+      ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.15.55.png>) ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.16.23.png>) -
+
+    - **Mobile View**:
+      ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.31.22.png>)
+      ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.20.26.png>)
