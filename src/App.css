@@ -3,7 +3,7 @@
 /* General styles */
 .App {
   text-align: left;
-  padding: 3% 6%;
+  padding: 3% 10%;
 }
 
 .App * {
@@ -15,7 +15,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 3.8rem;
-  line-height: 0.2;
+  line-height: 0.2rem;
 }
 
 h3 {
@@ -24,6 +24,7 @@ h3 {
   font-weight: 500;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  line-height: 0.2rem;
 }
 
 p {
@@ -54,7 +55,7 @@ span {
 
 .logo-container {
   float: left;
-  margin: 20px;
+  padding: 10px;
 }
 
 .search-container {
@@ -205,13 +206,23 @@ input[type="number"] {
   grid-template-columns: 1fr 1fr;
 }
 
-.myClass {
-  color: #333;
-  font-size: 16px;
-  font-weight: bold;
+@media (max-width: 1300px) {
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
+  .logo-container {
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+
+  .App {
+    text-align: left;
+    padding: 3% 1%;
+  }
   .charts-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -220,11 +231,22 @@ input[type="number"] {
     margin: 2rem;
     grid-template-columns: 1fr;
   }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 460px) {
   #event-list {
     margin-top: 2rem;
     grid-template-columns: 1fr;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
