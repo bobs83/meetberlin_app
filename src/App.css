@@ -94,8 +94,9 @@ ul,
 
 .details-btn {
   position: absolute;
-  top: 5px;
-  right: 13px;
+
+  top: 180px;
+  right: 40px;
   padding: 10px 16px;
   border-radius: 4px;
   background: linear-gradient(to right, #065a60, #08878d);
@@ -236,6 +237,10 @@ input[type="number"] {
     justify-content: center;
     flex-direction: column;
   }
+
+  .charts-container {
+    margin: 0rem;
+  }
 }
 
 @media (max-width: 460px) {
@@ -248,5 +253,9 @@ input[type="number"] {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  .details-btn {
+    position: unset;
+    margin: 10px auto;
   }
 }
