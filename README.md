@@ -1,5 +1,7 @@
 # MeetNCode App
 
+![Logo MeetNCode](src/img/logo2.png)
+
 ### Link: https://bobs83.github.io/meetberlin_app/
 
 ## Introduction
@@ -159,11 +161,3 @@ As an analytical user, I should be able to view charts visualizing event details
   - **Performance Optimization**: Performance assessments are conducted through tools such as Google Lighthouse to ensure optimal application speed and efficiency. Key focus areas include: - **Load Time**: Minimizing the time it takes for the app to become fully operational. - **Responsiveness**: Ensuring the app responds swiftly to user interactions regardless of the device or browser. - **Resource Efficiency**: Optimizing the use of resources to ensure a smooth, lag-free experience, especially in offline mode.
 
 ## Screenshots
-
-    - **Full Screen**:
-      ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.15.55.png>)
-      ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.16.23.png>)
-
-    - **Mobile View**:
-      ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.31.22.png>)
-      ![Alt text](<Screenshots /Screenshot 2023-12-26 at 00.20.26.png>)
