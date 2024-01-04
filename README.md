@@ -1,7 +1,5 @@
 # MeetNCode App
 
-![Logo MeetNCode](src/img/logo2.png)
-
 ### Link: https://bobs83.github.io/meetberlin_app/
 
 ## Introduction
