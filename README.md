@@ -1,5 +1,7 @@
 # MeetNCode App
 
+![MeetNCode Logo](src/img/logo2.png)
+
 ## Introduction
 
 **Meet App** is a serverless Progressive Web Application (PWA) built with React. Utilizing a Test-Driven Development (TDD) approach, this app seamlessly integrates with the Google Calendar API to fetch and display upcoming events.
