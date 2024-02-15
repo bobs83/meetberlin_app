@@ -4,12 +4,13 @@
 
 ## Introduction
 
-**Meet App** is a serverless Progressive Web Application (PWA) built with React. Utilizing a Test-Driven Development (TDD) approach, this app seamlessly integrates with the Google Calendar API to fetch and display upcoming events.
+**Meet App** is a serverless Progressive Web Application (PWA) built with React. Utilizing a Test-Driven Development (TDD) approach, this app integrates with the Google Calendar API to fetch and display upcoming events.
 
 ## Objective
 
-The primary objective is to create an app that embodies the future of web development by combining serverless architecture and the benefits of PWAs. This includes:
+The primary objective is to create an app that embodies the future of web development by combining serverless architecture and the benefits of PWAs. 
 
+This includes:
 - **Serverless Architecture**: Ensures no backend maintenance, easy scalability, availability, and no cost for idle time.
 - **Progressive Web App (PWA) Features**: Includes instant loading, offline support, push notifications, "add to home screen" prompt, responsive design, and cross-platform compatibility.
 
@@ -156,4 +157,9 @@ As an analytical user, I should be able to view charts visualizing event details
     - **Unit Testing**: Ensuring individual components function correctly.
     - **Integration Testing**: Validating the interaction between various components.
     - **End-to-End Testing**: Testing the entire application workflow as experienced by the end user.
-  - **Performance Optimization**: Performance assessments are conducted through tools such as Google Lighthouse to ensure optimal application speed and efficiency. Key focus areas include: - **Load Time**: Minimizing the time it takes for the app to become fully operational. - **Responsiveness**: Ensuring the app responds swiftly to user interactions regardless of the device or browser. - **Resource Efficiency**: Optimizing the use of resources to ensure a smooth, lag-free experience, especially in offline mode.
+  - **Performance Optimization**: Performance assessments are conducted through tools such as Google Lighthouse to ensure optimal application speed and efficiency.
+    
+Key focus areas include: 
+- **Load Time**: Minimizing the time it takes for the app to become fully operational. 
+- **Responsiveness**: Ensuring the app responds swiftly to user interactions regardless of the device or browser. 
+- **Resource Efficiency**: Optimizing the use of resources to ensure a smooth, lag-free experience, especially in offline mode.
