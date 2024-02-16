@@ -1,6 +1,8 @@
 # MeetNCode App
 
-![MeetNCode Logo](src/img/logo2.png)
+![main-view](https://raw.githubusercontent.com/bobs83/meetberlin_app/main/readme-pics%20/main-view.png)
+
+![event-view](https://raw.githubusercontent.com/bobs83/meetberlin_app/main/readme-pics%20/event-view.png)
 
 ## Introduction
 
@@ -22,6 +24,10 @@ This includes:
 - **Offline Usage**: Access the app even without an internet connection.
 - **Home Screen Shortcut**: Add the app shortcut to your device's home screen.
 - **Data Visualization**: Charts displaying event details, including scatterplots and pie charts for event locations and genre popularity.
+
+## Deployment 
+
+The application is deployed on GitHub Pages at https://bobs83.github.io/meetberlin_app/
 
 ## Features and User Stories
 
