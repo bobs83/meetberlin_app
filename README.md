@@ -16,6 +16,14 @@ This includes:
 - **Serverless Architecture**: Ensures no backend maintenance, easy scalability, availability, and no cost for idle time.
 - **Progressive Web App (PWA) Features**: Includes instant loading, offline support, push notifications, "add to home screen" prompt, responsive design, and cross-platform compatibility.
 
+## Technologies
+- **React**: A JavaScript library for building user interfaces.
+- +**Recharts**: A composable charting library for React.
+- **Google OAuth**: Authentication protocol used for user login.
+- **Puppeteer**: A Node library that provides a high-level API to control headless browsers or full browsers over the DevTools Protocol.
+- **JEST**: A JavaScript testing framework for React applications.
+- **Cucumber Gherkin**: A behavior-driven development (BDD) tool that allows developers to write tests in a natural language style.
+
 ## Key Features
 
 - **Event Filtering**: Search and filter events by city.
