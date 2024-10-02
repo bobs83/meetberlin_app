@@ -165,8 +165,8 @@ As an analytical user, I should be able to view charts visualizing event details
 - **PWA Compliance**: Adhering to Lighthouse's PWA checklist to guarantee a high-quality Progressive Web App experience.
 - **Offline Functionality**: Ensuring robust offline functionality using service workers for a seamless user experience even without internet connectivity.
 - **Data Visualization**: Integration of data visualization tools for effective representation of event data.
-- **Testing and Performance**:
 
+- **Testing and Performance**:
   - **Comprehensive Testing**: Embracing a thorough Test-Driven Development (TDD) approach, the application undergoes extensive testing. This includes:
     - **Unit Testing**: Ensuring individual components function correctly.
     - **Integration Testing**: Validating the interaction between various components.
